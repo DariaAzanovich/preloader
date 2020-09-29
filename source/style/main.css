@@ -1,0 +1,71 @@
+body {
+  width: 100vw;
+  height: 100vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+.box {
+  position: relative;
+  background-color: #333;
+  width: 500px;
+  height: 500px;
+  margin: 20% auto;
+}
+
+.circle {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: cornflowerblue;
+  -webkit-animation: move 10s linear infinite;
+          animation: move 10s linear infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: calc(100% - 80px);
+    top: 0;
+  }
+  50% {
+    left: calc(100% - 80px);
+    top: calc(100% - 80px);
+  }
+  75% {
+    left: 0;
+    top: calc(100% - 80px);
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: calc(100% - 80px);
+    top: 0;
+  }
+  50% {
+    left: calc(100% - 80px);
+    top: calc(100% - 80px);
+  }
+  75% {
+    left: 0;
+    top: calc(100% - 80px);
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

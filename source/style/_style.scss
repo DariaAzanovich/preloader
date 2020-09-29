@@ -1,0 +1,51 @@
+body {
+  width: 100vw;
+  height: 100vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+.box {
+  position: relative;
+  background-color: #333;
+  width: $box-size;
+  height: $box-size;
+  margin: 20% auto;
+}
+
+.circle {
+  position: absolute;
+  height: $circle-size;
+  width: $circle-size;
+
+  border-radius: 50%;
+  background-color: cornflowerblue;
+
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  25% {
+    left: calc(100% - #{$circle-size});
+    top: 0;
+  }
+
+  50% {
+    left: calc(100% - #{$circle-size});
+    top: calc(100% - #{$circle-size});
+  }
+
+  75% {
+    left: 0;
+    top: calc(100% - #{$circle-size});
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
